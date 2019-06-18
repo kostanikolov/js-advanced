@@ -1,12 +1,5 @@
-const x = 42;
+function solve() {
 
-function getX() {
-    return this.x;
 }
 
-const obj = { x, getX };
-const unboundGetX = obj.getX;
-console.log(unboundGetX());
-
-const boundGetX = unboundGetX.bind(obj);
-console.log(boundGetX());
+solve();
