@@ -14,14 +14,6 @@ const fn = (function () {
 
 console.log(fn(3)(5)(8).toString());
 
-
-
-
-
-
-
-
-
 // function add(num) {
 //     let sum = num;
 
