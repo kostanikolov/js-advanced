@@ -1,0 +1,9 @@
+html {
+    font-family: "Courier New", Courier, monospace;
+}
+
+.container {
+    font-size: 3rem;
+    padding-left: 3rem;
+    padding-top: 3rem;
+}
