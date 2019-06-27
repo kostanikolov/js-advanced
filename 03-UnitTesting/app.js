@@ -1,9 +1,13 @@
-const input0 = {
-    method: 'GET',
-    uri: 'svn.public.catalog',
-    version: 'HTTP/1.1',
-    message: ''
+function Dog(name, age) {
+    this.name = name;
+    this.age = age;
+
+    static this.displayInfo = () => {
+        return this;
+    }
 }
 
-const props = ['method', 'uri', 'version', 'message'];
-const inputProps = Object.keys(input0);
+Dog().displayInfo()
+
+const bullet = new Dog('Bullet', 4);
+const maylo = new Dog('Maylo', 2);
