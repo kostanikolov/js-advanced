@@ -1,15 +1,31 @@
-let modu1e = (function () {
-    let count = 0;
-
-    return {
-        increase: (number) => count += number,
-        decrease: (number) => count -= number,
-        value: () => count,
+class Animal {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
     }
-})();
+}
 
-console.log(modu1e.increase(2));
-console.log(modu1e.increase(3));
-console.log(modu1e.increase(5));
-console.log(modu1e.decrease(2));
-console.log(modu1e.value());
+class Mammal extends Animal {
+    constructor(name, age) {
+        super(name, age);
+        this.isCastrated = false;
+    }
+}
+
+class Dog extends Mammal {
+    constructor(name, age) {
+        super(name, age);
+        this.bark = "Bark!";
+    }
+}
+
+class Cat extends Mammal {
+    constructor(name, age) {
+        super(name, age);
+        this.meow = "Meow!";
+    }
+}
+
+let dog = new Dog("Sharo", 11);
+let cat = new Cat("Simon", 7);
+
